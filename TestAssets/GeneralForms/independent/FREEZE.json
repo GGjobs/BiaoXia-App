@@ -1,0 +1,133 @@
+{
+  "version": "1.1.0",
+  "frozenAt": "2026-09-09",
+  "purpose": "T12 only; no engine/rule/prompt tuning",
+  "manifestSha256": "7865098768a8552aecb4b59238b7451eeffb2567dadc7965368f38815e10f461",
+  "samples": [
+    {
+      "id": "F03-pdf",
+      "family": "F03",
+      "scenario": "入职",
+      "split": "independent",
+      "kind": "normal",
+      "format": "PDF",
+      "file": "independent/normal/F03-pdf.pdf",
+      "sha256": "2aeb9bfe220f5e407f167b27e4c274162fa7100d0d25858b009c3b4f73420441",
+      "answer": "independent/answers/F03-pdf.json",
+      "answerSha256": "4c30b2b75eafaac31df61b79a75453eed5ac05fbacd1bc7ece526b4717b61846",
+      "standardFieldCount": 8,
+      "basicMatchDenominator": 4
+    },
+    {
+      "id": "F03-docx",
+      "family": "F03",
+      "scenario": "入职",
+      "split": "independent",
+      "kind": "normal",
+      "format": "DOCX",
+      "file": "independent/normal/F03-docx.docx",
+      "sha256": "d6ee74eb9eed50e878327298a69cfd52134e8b06b386f962818ce9055b1dcead",
+      "answer": "independent/answers/F03-docx.json",
+      "answerSha256": "4b314f5d55443c45450171048806bafe8456b82317f40be6ecda2a2ad5b45863",
+      "standardFieldCount": 8,
+      "basicMatchDenominator": 4
+    },
+    {
+      "id": "F06-pdf",
+      "family": "F06",
+      "scenario": "报名",
+      "split": "independent",
+      "kind": "normal",
+      "format": "PDF",
+      "file": "independent/normal/F06-pdf.pdf",
+      "sha256": "c798216fd73876cb07a5f9b5326f237baa67f9179f7e37b12bdc7c969b8c3de9",
+      "answer": "independent/answers/F06-pdf.json",
+      "answerSha256": "b3e9062395036eb4828dbe695c817b74485112c5d00794876e1219b6da77e803",
+      "standardFieldCount": 9,
+      "basicMatchDenominator": 3
+    },
+    {
+      "id": "F06-docx",
+      "family": "F06",
+      "scenario": "报名",
+      "split": "independent",
+      "kind": "normal",
+      "format": "DOCX",
+      "file": "independent/normal/F06-docx.docx",
+      "sha256": "e379ec0c99d5eb46049f4a929152ecbbedeeb45d6744e733a56e134b74e4ce10",
+      "answer": "independent/answers/F06-docx.json",
+      "answerSha256": "fe8453b98c621f3a82ac04980e4ca28471ab6336640c062f848c55092b867316",
+      "standardFieldCount": 9,
+      "basicMatchDenominator": 3
+    },
+    {
+      "id": "F09-pdf",
+      "family": "F09",
+      "scenario": "会员",
+      "split": "independent",
+      "kind": "normal",
+      "format": "PDF",
+      "file": "independent/normal/F09-pdf.pdf",
+      "sha256": "5d244ad93ce138f6253b3f813dd04ee5e7a8db0dd3f6be75484a46c44fa85a44",
+      "answer": "independent/answers/F09-pdf.json",
+      "answerSha256": "bb3b30ed08582144b15be9fed6502868c3a5bd416b73dfb77c04cd19a7350d32",
+      "standardFieldCount": 7,
+      "basicMatchDenominator": 4
+    },
+    {
+      "id": "F09-docx",
+      "family": "F09",
+      "scenario": "会员",
+      "split": "independent",
+      "kind": "normal",
+      "format": "DOCX",
+      "file": "independent/normal/F09-docx.docx",
+      "sha256": "6f10064ca9a7c1a8c80219baf0baacd842d8e0fcfabd28eeef7e304a5a3db75f",
+      "answer": "independent/answers/F09-docx.json",
+      "answerSha256": "bd73635cda884fb186d5f26df4eadf065493e7c8ab0a5fadc540c76254705944",
+      "standardFieldCount": 7,
+      "basicMatchDenominator": 4
+    },
+    {
+      "id": "F12-pdf",
+      "family": "F12",
+      "scenario": "个人申请",
+      "split": "independent",
+      "kind": "normal",
+      "format": "PDF",
+      "file": "independent/normal/F12-pdf.pdf",
+      "sha256": "3afe1c6ce418a96f834f706509f6d771f58dae67b806055055c082bd1eb7057a",
+      "answer": "independent/answers/F12-pdf.json",
+      "answerSha256": "642612ce57d954263d73db07d98d3186da2e93472945f3a6c3a138f928406887",
+      "standardFieldCount": 9,
+      "basicMatchDenominator": 3
+    },
+    {
+      "id": "F12-docx",
+      "family": "F12",
+      "scenario": "个人申请",
+      "split": "independent",
+      "kind": "normal",
+      "format": "DOCX",
+      "file": "independent/normal/F12-docx.docx",
+      "sha256": "a65226044c9d96a06b40e4cccf4f00801bd3bb9fe6fba623b582858477f287bc",
+      "answer": "independent/answers/F12-docx.json",
+      "answerSha256": "55cb8617507b5a43179dd03f5c5098a4c1473cd6c7deb5049af724c67d9ab06a",
+      "standardFieldCount": 9,
+      "basicMatchDenominator": 3
+    }
+  ],
+  "denominators": {
+    "independent/PDF": {
+      "samples": 4,
+      "standardFields": 33,
+      "basicMatch": 14
+    },
+    "independent/DOCX": {
+      "samples": 4,
+      "standardFields": 33,
+      "basicMatch": 14
+    }
+  },
+  "changePolicy": "Changes require a new version, reason and fingerprint history; observed failures are retests, never unseen results."
+}

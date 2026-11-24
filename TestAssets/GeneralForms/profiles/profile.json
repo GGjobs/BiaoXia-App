@@ -1,0 +1,244 @@
+{
+  "fictional": true,
+  "id": "person-fictional-01",
+  "facts": [
+    {
+      "id": "profile:fullName",
+      "standard": "fullName",
+      "value": "苏若岚",
+      "confirmed": true,
+      "material": "fictional_profile.txt",
+      "line": 2
+    },
+    {
+      "id": "profile:englishName",
+      "standard": "englishName",
+      "value": "Rowan Su",
+      "confirmed": true,
+      "material": "fictional_profile.txt",
+      "line": 3
+    },
+    {
+      "id": "profile:birthDate",
+      "standard": "birthDate",
+      "value": "1999-02-28",
+      "confirmed": true,
+      "material": "fictional_profile.txt",
+      "line": 4
+    },
+    {
+      "id": "profile:email",
+      "standard": "email",
+      "value": "rowan.su@example.test",
+      "confirmed": true,
+      "material": "fictional_profile.txt",
+      "line": 5
+    },
+    {
+      "id": "profile:phone",
+      "standard": "phone",
+      "value": "000-0100-0001",
+      "confirmed": true,
+      "material": "fictional_profile.txt",
+      "line": 6
+    },
+    {
+      "id": "profile:address",
+      "standard": "address",
+      "value": "虚构市云帆路十二号",
+      "confirmed": true,
+      "material": "fictional_profile.txt",
+      "line": 7
+    },
+    {
+      "id": "profile:contact.name",
+      "standard": "contact.name",
+      "value": "周星禾",
+      "confirmed": true,
+      "material": "fictional_profile.txt",
+      "line": 8
+    },
+    {
+      "id": "profile:contact.phone",
+      "standard": "contact.phone",
+      "value": "000-0100-0002",
+      "confirmed": true,
+      "material": "fictional_profile.txt",
+      "line": 9
+    },
+    {
+      "id": "profile:spouse.name",
+      "standard": "spouse.name",
+      "value": "陆青舟",
+      "confirmed": true,
+      "material": "fictional_profile.txt",
+      "line": 10
+    },
+    {
+      "id": "profile:education.highest.school",
+      "standard": "education.highest.school",
+      "value": "虚构澄海学院",
+      "confirmed": true,
+      "material": "fictional_profile.txt",
+      "line": 11
+    },
+    {
+      "id": "profile:education.highest.level",
+      "standard": "education.highest.level",
+      "value": "硕士",
+      "confirmed": true,
+      "material": "fictional_profile.txt",
+      "line": 12
+    },
+    {
+      "id": "profile:work.employer",
+      "standard": "work.employer",
+      "value": "虚构星屿实验室",
+      "confirmed": true,
+      "material": "fictional_profile.txt",
+      "line": 13
+    },
+    {
+      "id": "profile:skills",
+      "standard": "skills",
+      "value": [
+        "Python",
+        "Swift"
+      ],
+      "confirmed": true,
+      "material": "fictional_profile.txt",
+      "line": 14
+    },
+    {
+      "id": "profile:startDate",
+      "standard": "startDate",
+      "value": "2026-10-01",
+      "confirmed": true,
+      "material": "fictional_profile.txt",
+      "line": 15
+    },
+    {
+      "id": "profile:membership",
+      "standard": "membership",
+      "value": "普通",
+      "confirmed": true,
+      "material": "fictional_profile.txt",
+      "line": 16
+    },
+    {
+      "id": "profile:delivery",
+      "standard": "delivery",
+      "value": "电子",
+      "confirmed": true,
+      "material": "fictional_profile.txt",
+      "line": 17
+    },
+    {
+      "id": "profile:course",
+      "standard": "course",
+      "value": "数据分析",
+      "confirmed": true,
+      "material": "fictional_profile.txt",
+      "line": 18
+    },
+    {
+      "id": "profile:language",
+      "standard": "language",
+      "value": "中文",
+      "confirmed": true,
+      "material": "fictional_profile.txt",
+      "line": 19
+    },
+    {
+      "id": "profile:project",
+      "standard": "project",
+      "value": "虚构潮汐观测项目",
+      "confirmed": true,
+      "material": "fictional_profile.txt",
+      "line": 20
+    },
+    {
+      "id": "profile:summary",
+      "standard": "summary",
+      "value": "参与虚构数据整理项目，负责校验与结果展示。",
+      "confirmed": true,
+      "material": "fictional_profile.txt",
+      "line": 21
+    },
+    {
+      "id": "profile:certificate",
+      "standard": "certificate",
+      "value": "虚构数据实践证书",
+      "confirmed": true,
+      "material": "fictional_profile.txt",
+      "line": 22
+    },
+    {
+      "id": "profile:education.major",
+      "standard": "education.major",
+      "value": "数据科学",
+      "confirmed": true,
+      "material": "fictional_profile.txt",
+      "line": 23
+    },
+    {
+      "id": "profile:education.graduation",
+      "standard": "education.graduation",
+      "value": "2024-06-30",
+      "confirmed": true,
+      "material": "fictional_profile.txt",
+      "line": 24
+    },
+    {
+      "id": "profile:work.role",
+      "standard": "work.role",
+      "value": "数据助理",
+      "confirmed": true,
+      "material": "fictional_profile.txt",
+      "line": 25
+    }
+  ],
+  "educationRecords": [
+    {
+      "id": "edu-bachelor",
+      "level": "本科",
+      "school": "虚构云舟大学",
+      "confirmed": true
+    },
+    {
+      "id": "edu-master",
+      "level": "硕士",
+      "school": "虚构澄海学院",
+      "confirmed": true
+    }
+  ],
+  "experiences": [
+    {
+      "id": "exp-1",
+      "title": "虚构经历1",
+      "confirmed": true
+    },
+    {
+      "id": "exp-2",
+      "title": "虚构经历2",
+      "confirmed": true
+    },
+    {
+      "id": "exp-3",
+      "title": "虚构经历3",
+      "confirmed": true
+    },
+    {
+      "id": "exp-4",
+      "title": "虚构经历4",
+      "confirmed": true
+    }
+  ],
+  "unconfirmed": [
+    {
+      "standard": "declaration",
+      "value": null,
+      "confirmed": false
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "sample": "F09-pdf",
+  "profile": "profiles/profile.json",
+  "fields": [
+    {
+      "id": "f01",
+      "standard": "fullName",
+      "label": "申请人姓名",
+      "section": "会员身份",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "苏若岚",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:fullName"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          51,
+          639.8897637795277,
+          493.27559055118115,
+          34
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f02",
+      "standard": "birthDate",
+      "label": "出生日期",
+      "section": "会员身份",
+      "type": "date",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48,
+        "dateFormat": "yyyy-MM-dd",
+        "validCalendarDate": true
+      },
+      "expected": "1999-02-28",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:birthDate"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          51,
+          567.8897637795277,
+          493.27559055118115,
+          34
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f03",
+      "standard": "membership",
+      "label": "会员类别",
+      "section": "会员身份",
+      "type": "single",
+      "options": [
+        "普通",
+        "学生"
+      ],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "普通",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:membership"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          51,
+          495.8897637795277,
+          493.27559055118115,
+          34
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ],
+        "optionRects": {
+          "普通": [
+            51.0,
+            503.8897637795277,
+            9,
+            9
+          ],
+          "学生": [
+            297.6377952755906,
+            503.8897637795277,
+            9,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "id": "f04",
+      "standard": "email",
+      "label": "电子邮箱",
+      "section": "联络偏好",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "rowan.su@example.test",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:email"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          51,
+          386.8897637795277,
+          493.27559055118115,
+          34
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f05",
+      "standard": "address",
+      "label": "通讯地址",
+      "section": "联络偏好",
+      "type": "multiline",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 120
+      },
+      "expected": "虚构市云帆路十二号",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:address"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          51,
+          301.8897637795277,
+          493.27559055118115,
+          47
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f06",
+      "standard": "delivery",
+      "label": "寄送方式",
+      "section": "联络偏好",
+      "type": "single",
+      "options": [
+        "电子",
+        "纸质"
+      ],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "电子",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:delivery"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          51,
+          229.8897637795277,
+          493.27559055118115,
+          34
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ],
+        "optionRects": {
+          "电子": [
+            51.0,
+            237.8897637795277,
+            9,
+            9
+          ],
+          "纸质": [
+            297.6377952755906,
+            237.8897637795277,
+            9,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "id": "f07",
+      "standard": "declaration",
+      "label": "是否同意声明",
+      "section": "本人声明",
+      "type": "single",
+      "options": [
+        "是",
+        "否"
+      ],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": null,
+      "expectedState": "ask",
+      "question": "请明确选择，未确认不视为否。",
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [],
+      "location": {
+        "page": 0,
+        "rect": [
+          51,
+          120.8897637795277,
+          493.27559055118115,
+          34
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ],
+        "optionRects": {
+          "是": [
+            51.0,
+            128.8897637795277,
+            9,
+            9
+          ],
+          "否": [
+            297.6377952755906,
+            128.8897637795277,
+            9,
+            9
+          ]
+        }
+      }
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "parse",
+      "expected": "发现所有标准字段，语义/类型/位置一致",
+      "result": "pending"
+    },
+    {
+      "id": "match",
+      "expected": "按标准答案匹配；疑点询问，不覆盖已确认人工修改",
+      "result": "pending"
+    },
+    {
+      "id": "export",
+      "expected": "原格式新文件，原件与非目标内容保留，无溢出",
+      "result": "pending"
+    }
+  ]
+}

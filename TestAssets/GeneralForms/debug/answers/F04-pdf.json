@@ -1,0 +1,281 @@
+{
+  "sample": "F04-pdf",
+  "profile": "profiles/profile.json",
+  "fields": [
+    {
+      "id": "f01",
+      "standard": "fullName",
+      "label": "申请人姓名",
+      "section": "本人",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "苏若岚",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:fullName"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          659.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f02",
+      "standard": "address",
+      "label": "通讯地址",
+      "section": "本人",
+      "type": "multiline",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 120
+      },
+      "expected": "虚构市云帆路十二号",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:address"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          594.8897637795277,
+          339.27559055118115,
+          45
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f03",
+      "standard": "contact.name",
+      "label": "姓名",
+      "section": "紧急联系人",
+      "type": "text",
+      "options": [],
+      "relation": "contact",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "周星禾",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:contact.name"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          505.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f04",
+      "standard": "contact.phone",
+      "label": "电话",
+      "section": "紧急联系人",
+      "type": "text",
+      "options": [],
+      "relation": "contact",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "000-0100-0002",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:contact.phone"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          453.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f05",
+      "standard": "contact.email",
+      "label": "紧急联系人邮箱",
+      "section": "紧急联系人",
+      "type": "text",
+      "options": [],
+      "relation": "contact",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": null,
+      "expectedState": "ask",
+      "question": "请补充联系人邮箱。",
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          401.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f06",
+      "standard": "spouse.name",
+      "label": "家属姓名",
+      "section": "家属",
+      "type": "text",
+      "options": [],
+      "relation": "spouse",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "陆青舟",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:spouse.name"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          312.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f07",
+      "standard": "declaration",
+      "label": "是否同意声明",
+      "section": "家属",
+      "type": "single",
+      "options": [
+        "是",
+        "否"
+      ],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": null,
+      "expectedState": "ask",
+      "question": "请明确选择，未确认不视为否。",
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          260.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ],
+        "optionRects": {
+          "是": [
+            205.0,
+            268.8897637795277,
+            9,
+            9
+          ],
+          "否": [
+            374.6377952755906,
+            268.8897637795277,
+            9,
+            9
+          ]
+        }
+      }
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "parse",
+      "expected": "发现所有标准字段，语义/类型/位置一致",
+      "result": "pending"
+    },
+    {
+      "id": "match",
+      "expected": "按标准答案匹配；疑点询问，不覆盖已确认人工修改",
+      "result": "pending"
+    },
+    {
+      "id": "export",
+      "expected": "原格式新文件，原件与非目标内容保留，无溢出",
+      "result": "pending"
+    }
+  ]
+}

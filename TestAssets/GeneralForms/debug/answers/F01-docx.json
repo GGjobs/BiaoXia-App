@@ -1,0 +1,252 @@
+{
+  "sample": "F01-docx",
+  "profile": "profiles/profile.json",
+  "fields": [
+    {
+      "id": "f01",
+      "standard": "fullName",
+      "label": "姓名",
+      "section": "个人信息",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "苏若岚",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:fullName"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:tbl/w:tr[1]/w:tc[2]/w:p/w:r",
+        "target": "run",
+        "placeholder": "{{f01}}"
+      }
+    },
+    {
+      "id": "f02",
+      "standard": "englishName",
+      "label": "英文姓名",
+      "section": "个人信息",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "Rowan Su",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:englishName"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:tbl/w:tr[2]/w:tc[2]/w:p/w:r",
+        "target": "run",
+        "placeholder": "{{f02}}"
+      }
+    },
+    {
+      "id": "f03",
+      "standard": "birthDate",
+      "label": "出生日期",
+      "section": "个人信息",
+      "type": "date",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48,
+        "dateFormat": "yyyy-MM-dd",
+        "validCalendarDate": true
+      },
+      "expected": "1999-02-28",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:birthDate"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:tbl/w:tr[3]/w:tc[2]/w:p/w:r",
+        "target": "run",
+        "placeholder": "{{f03}}"
+      }
+    },
+    {
+      "id": "f04",
+      "standard": "email",
+      "label": "电子邮箱",
+      "section": "个人信息",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "rowan.su@example.test",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:email"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:tbl/w:tr[4]/w:tc[2]/w:p/w:r",
+        "target": "run",
+        "placeholder": "{{f04}}"
+      }
+    },
+    {
+      "id": "f05",
+      "standard": "education.highest.school",
+      "label": "最高学历毕业院校",
+      "section": "教育与技能",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "虚构澄海学院",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:education.highest.school"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:tbl/w:tr[5]/w:tc[2]/w:p/w:r",
+        "target": "run",
+        "placeholder": "{{f05}}"
+      }
+    },
+    {
+      "id": "f06",
+      "standard": "education.highest.level",
+      "label": "最高学历",
+      "section": "教育与技能",
+      "type": "single",
+      "options": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "硕士",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:education.highest.level"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:tbl/w:tr[6]/w:tc[2]/w:p/w:r",
+        "target": "run",
+        "placeholder": "□ 本科  □ 硕士  □ 博士"
+      }
+    },
+    {
+      "id": "f07",
+      "standard": "skills",
+      "label": "技能（可多选）",
+      "section": "教育与技能",
+      "type": "multi",
+      "options": [
+        "Python",
+        "Swift",
+        "SQL"
+      ],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": [
+        "Python",
+        "Swift"
+      ],
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:skills"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:tbl/w:tr[7]/w:tc[2]/w:p/w:r",
+        "target": "run",
+        "placeholder": "□ Python  □ Swift  □ SQL"
+      }
+    },
+    {
+      "id": "f08",
+      "standard": "summary",
+      "label": "个人说明",
+      "section": "教育与技能",
+      "type": "multiline",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 120
+      },
+      "expected": "参与虚构数据整理项目，负责校验与结果展示。",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:summary"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:tbl/w:tr[8]/w:tc[2]/w:p/w:r",
+        "target": "run",
+        "placeholder": "{{f08}}"
+      }
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "parse",
+      "expected": "发现所有标准字段，语义/类型/位置一致",
+      "result": "pending"
+    },
+    {
+      "id": "match",
+      "expected": "按标准答案匹配；疑点询问，不覆盖已确认人工修改",
+      "result": "pending"
+    },
+    {
+      "id": "export",
+      "expected": "原格式新文件，原件与非目标内容保留，无溢出",
+      "result": "pending"
+    }
+  ]
+}

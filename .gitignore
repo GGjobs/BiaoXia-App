@@ -1,0 +1,15 @@
+.DS_Store
+tmp/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+.env
+Secrets.xcconfig
+Relay/.env
+output/rendered/
+Relay/node_modules/
+*.demo-access.json
+
+*.demo-config.json
+*.demo-config.json.lock
+*.demo-config.json.*.tmp

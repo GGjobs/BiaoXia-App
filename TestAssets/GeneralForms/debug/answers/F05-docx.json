@@ -1,0 +1,221 @@
+{
+  "sample": "F05-docx",
+  "profile": "profiles/profile.json",
+  "fields": [
+    {
+      "id": "f01",
+      "standard": "project",
+      "label": "项目名称",
+      "section": "申报信息",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "虚构潮汐观测项目",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:project"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:tbl/w:tr[2]/w:tc[2]/w:p/w:r",
+        "target": "run",
+        "placeholder": "{{f01}}"
+      }
+    },
+    {
+      "id": "f02",
+      "standard": "fullName",
+      "label": "申请人姓名",
+      "section": "申报信息",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "苏若岚",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:fullName"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:tbl/w:tr[3]/w:tc[2]/w:p/w:r",
+        "target": "run",
+        "placeholder": "{{f02}}"
+      }
+    },
+    {
+      "id": "f03",
+      "standard": "education.highest.school",
+      "label": "最高学历毕业院校",
+      "section": "申报信息",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "虚构澄海学院",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:education.highest.school"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:tbl/w:tr[4]/w:tc[2]/w:p/w:r",
+        "target": "run",
+        "placeholder": "{{f03}}"
+      }
+    },
+    {
+      "id": "f04",
+      "standard": "email",
+      "label": "电子邮箱",
+      "section": "申报信息",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "rowan.su@example.test",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:email"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:tbl/w:tr[5]/w:tc[2]/w:p/w:r",
+        "target": "run",
+        "placeholder": "{{f04}}"
+      }
+    },
+    {
+      "id": "f05",
+      "standard": "skills",
+      "label": "技能（可多选）",
+      "section": "项目能力",
+      "type": "multi",
+      "options": [
+        "Python",
+        "Swift",
+        "SQL"
+      ],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": [
+        "Python",
+        "Swift"
+      ],
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:skills"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:tbl/w:tr[7]/w:tc[2]/w:p/w:r",
+        "target": "run",
+        "placeholder": "□ Python  □ Swift  □ SQL"
+      }
+    },
+    {
+      "id": "f06",
+      "standard": "summary",
+      "label": "个人说明",
+      "section": "项目能力",
+      "type": "multiline",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 120
+      },
+      "expected": "参与虚构数据整理项目，负责校验与结果展示。",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:summary"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:tbl/w:tr[8]/w:tc[2]/w:p/w:r",
+        "target": "run",
+        "placeholder": "{{f06}}"
+      }
+    },
+    {
+      "id": "f07",
+      "standard": "startDate",
+      "label": "开始日期",
+      "section": "项目能力",
+      "type": "date",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48,
+        "dateFormat": "yyyy-MM-dd",
+        "validCalendarDate": true
+      },
+      "expected": "2026-10-01",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:startDate"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:tbl/w:tr[9]/w:tc[2]/w:p/w:r",
+        "target": "run",
+        "placeholder": "{{f07}}"
+      }
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "parse",
+      "expected": "发现所有标准字段，语义/类型/位置一致",
+      "result": "pending"
+    },
+    {
+      "id": "match",
+      "expected": "按标准答案匹配；疑点询问，不覆盖已确认人工修改",
+      "result": "pending"
+    },
+    {
+      "id": "export",
+      "expected": "原格式新文件，原件与非目标内容保留，无溢出",
+      "result": "pending"
+    }
+  ]
+}

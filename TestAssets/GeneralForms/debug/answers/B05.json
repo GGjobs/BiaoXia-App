@@ -1,0 +1,268 @@
+{
+  "sample": "B05",
+  "profile": "profiles/profile.json",
+  "fields": [
+    {
+      "id": "f01",
+      "standard": "fullName",
+      "label": "申请人姓名",
+      "section": "申请人",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": null,
+      "expectedState": "reject",
+      "question": null,
+      "refusalReason": "scan_target_unsupported",
+      "basicEligible": false,
+      "sources": [],
+      "location": {
+        "page": 0,
+        "rect": [
+          235.10884668828163,
+          706.9074382329288,
+          310.14358499305234,
+          49.99345390614773
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ],
+        "imageOnly": true
+      }
+    },
+    {
+      "id": "f02",
+      "standard": "phone",
+      "label": "联系电话",
+      "section": "申请人",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": null,
+      "expectedState": "reject",
+      "question": null,
+      "refusalReason": "scan_target_unsupported",
+      "basicEligible": false,
+      "sources": [],
+      "location": {
+        "page": 0,
+        "rect": [
+          235.10884668828163,
+          641.9159481549368,
+          310.14358499305234,
+          49.99345390614773
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ],
+        "imageOnly": true
+      }
+    },
+    {
+      "id": "f03",
+      "standard": "work.employer",
+      "label": "现工作单位",
+      "section": "申请人",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": null,
+      "expectedState": "reject",
+      "question": null,
+      "refusalReason": "scan_target_unsupported",
+      "basicEligible": false,
+      "sources": [],
+      "location": {
+        "page": 0,
+        "rect": [
+          235.10884668828163,
+          576.9244580769448,
+          310.14358499305234,
+          49.99345390614773
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ],
+        "imageOnly": true
+      }
+    },
+    {
+      "id": "f04",
+      "standard": "work.role",
+      "label": "岗位",
+      "section": "申请人",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": null,
+      "expectedState": "reject",
+      "question": null,
+      "refusalReason": "scan_target_unsupported",
+      "basicEligible": false,
+      "sources": [],
+      "location": {
+        "page": 0,
+        "rect": [
+          235.10884668828163,
+          511.9329679989527,
+          310.14358499305234,
+          49.99345390614773
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ],
+        "imageOnly": true
+      }
+    },
+    {
+      "id": "f05",
+      "standard": "selection.experiences",
+      "label": "最符合岗位的三段经历",
+      "section": "岗位意向",
+      "type": "multiline",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 120
+      },
+      "expected": null,
+      "expectedState": "reject",
+      "question": "请自行选择三段经历及顺序。",
+      "refusalReason": "scan_target_unsupported",
+      "basicEligible": false,
+      "sources": [],
+      "location": {
+        "page": 0,
+        "rect": [
+          235.10884668828163,
+          446.94147792096066,
+          310.14358499305234,
+          49.99345390614773
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ],
+        "imageOnly": true
+      }
+    },
+    {
+      "id": "f06",
+      "standard": "ambiguous.unit",
+      "label": "所属单位",
+      "section": "岗位意向",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": null,
+      "expectedState": "reject",
+      "question": "这里的单位指工作单位还是学校？",
+      "refusalReason": "scan_target_unsupported",
+      "basicEligible": false,
+      "sources": [],
+      "location": {
+        "page": 0,
+        "rect": [
+          235.10884668828163,
+          381.9499878429686,
+          310.14358499305234,
+          49.99345390614773
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ],
+        "imageOnly": true
+      }
+    },
+    {
+      "id": "f07",
+      "standard": "startDate",
+      "label": "开始日期",
+      "section": "岗位意向",
+      "type": "date",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48,
+        "dateFormat": "yyyy-MM-dd",
+        "validCalendarDate": true
+      },
+      "expected": null,
+      "expectedState": "reject",
+      "question": null,
+      "refusalReason": "scan_target_unsupported",
+      "basicEligible": false,
+      "sources": [],
+      "location": {
+        "page": 0,
+        "rect": [
+          235.10884668828163,
+          316.95849776497664,
+          310.14358499305234,
+          49.99345390614773
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ],
+        "imageOnly": true
+      }
+    }
+  ],
+  "documentRefusalReason": "scan_target_unsupported",
+  "documentExpectedState": "reject",
+  "checkpoints": [
+    {
+      "id": "scanned_form",
+      "expected": "拒绝扫描待填表；建档 OCR 属于另一流程。",
+      "result": "pending"
+    }
+  ],
+  "forbiddenOutbound": [
+    "苏若岚",
+    "FICTIONAL_",
+    "星屿实验室",
+    "B05.pdf"
+  ],
+  "execution": [
+    "import actual file",
+    "parse using production pipeline",
+    "review outbound text locally",
+    "capture actual HTTP and logs including retry and restore",
+    "compare each checkpoint independently"
+  ]
+}

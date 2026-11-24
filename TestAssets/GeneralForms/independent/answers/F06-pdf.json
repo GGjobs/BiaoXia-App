@@ -1,0 +1,381 @@
+{
+  "sample": "F06-pdf",
+  "profile": "profiles/profile.json",
+  "fields": [
+    {
+      "id": "f01",
+      "standard": "englishName",
+      "label": "英文姓名",
+      "section": "申请人",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "Rowan Su",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:englishName"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          50,
+          638.8897637795277,
+          230,
+          25
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f02",
+      "standard": "fullName",
+      "label": "姓名",
+      "section": "申请人",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "苏若岚",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:fullName"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          305,
+          638.8897637795277,
+          230,
+          25
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f03",
+      "standard": "birthDate",
+      "label": "出生日期",
+      "section": "申请人",
+      "type": "date",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48,
+        "dateFormat": "yyyy-MM-dd",
+        "validCalendarDate": true
+      },
+      "expected": "1999-02-28",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:birthDate"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          50,
+          565.8897637795277,
+          230,
+          25
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f04",
+      "standard": "education.highest.level",
+      "label": "最高学历",
+      "section": "学历记录",
+      "type": "single",
+      "options": [
+        "本科",
+        "硕士",
+        "博士"
+      ],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "硕士",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:education.highest.level"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          50,
+          455.8897637795277,
+          230,
+          25
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ],
+        "optionRects": {
+          "本科": [
+            50.0,
+            463.8897637795277,
+            9,
+            9
+          ],
+          "硕士": [
+            126.66666666666667,
+            463.8897637795277,
+            9,
+            9
+          ],
+          "博士": [
+            203.33333333333334,
+            463.8897637795277,
+            9,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "id": "f05",
+      "standard": "education.highest.school",
+      "label": "最高学历毕业院校",
+      "section": "学历记录",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "虚构澄海学院",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:education.highest.school"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          305,
+          455.8897637795277,
+          230,
+          25
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f06",
+      "standard": "education.major",
+      "label": "专业",
+      "section": "学历记录",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "数据科学",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:education.major"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          50,
+          382.8897637795277,
+          230,
+          25
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f07",
+      "standard": "education.graduation",
+      "label": "毕业日期",
+      "section": "学历记录",
+      "type": "date",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48,
+        "dateFormat": "yyyy-MM-dd",
+        "validCalendarDate": true
+      },
+      "expected": "2024-06-30",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:education.graduation"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          305,
+          382.8897637795277,
+          230,
+          25
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f08",
+      "standard": "certificate",
+      "label": "证书名称",
+      "section": "资格",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "虚构数据实践证书",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:certificate"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          50,
+          272.8897637795277,
+          230,
+          25
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f09",
+      "standard": "declaration",
+      "label": "是否同意声明",
+      "section": "资格",
+      "type": "single",
+      "options": [
+        "是",
+        "否"
+      ],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": null,
+      "expectedState": "ask",
+      "question": "请明确选择，未确认不视为否。",
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [],
+      "location": {
+        "page": 0,
+        "rect": [
+          305,
+          272.8897637795277,
+          230,
+          25
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ],
+        "optionRects": {
+          "是": [
+            305.0,
+            280.8897637795277,
+            9,
+            9
+          ],
+          "否": [
+            420.0,
+            280.8897637795277,
+            9,
+            9
+          ]
+        }
+      }
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "parse",
+      "expected": "发现所有标准字段，语义/类型/位置一致",
+      "result": "pending"
+    },
+    {
+      "id": "match",
+      "expected": "按标准答案匹配；疑点询问，不覆盖已确认人工修改",
+      "result": "pending"
+    },
+    {
+      "id": "export",
+      "expected": "原格式新文件，原件与非目标内容保留，无溢出",
+      "result": "pending"
+    }
+  ]
+}

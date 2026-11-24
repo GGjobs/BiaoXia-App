@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 2,
+  "templateID": "competition-registration-v1",
+  "templateVersion": "3.0.0",
+  "pageSize": "A4",
+  "coordinateOrigin": "topLeftNormalized",
+  "fields": [
+    { "key": "fullName", "pageIndex": 0, "rect": { "x": 0.2285, "y": 0.2281, "width": 0.3494, "height": 0.0333 }, "fontSize": 12, "minimumFontSize": 9, "maximumLines": 1, "alignment": "left", "required": true, "source": "fact" },
+    { "key": "gender", "pageIndex": 0, "rect": { "x": 0.7156, "y": 0.2281, "width": 0.1898, "height": 0.0333 }, "fontSize": 12, "minimumFontSize": 9, "maximumLines": 1, "alignment": "left", "required": true, "source": "fact" },
+    { "key": "birthDate", "pageIndex": 0, "rect": { "x": 0.2285, "y": 0.2851, "width": 0.6769, "height": 0.0333 }, "fontSize": 12, "minimumFontSize": 9, "maximumLines": 1, "alignment": "left", "required": true, "source": "fact" },
+    { "key": "school", "pageIndex": 0, "rect": { "x": 0.2537, "y": 0.4015, "width": 0.6518, "height": 0.0333 }, "fontSize": 12, "minimumFontSize": 9, "maximumLines": 1, "alignment": "left", "required": true, "source": "fact" },
+    { "key": "college", "pageIndex": 0, "rect": { "x": 0.2537, "y": 0.4585, "width": 0.6518, "height": 0.0333 }, "fontSize": 12, "minimumFontSize": 9, "maximumLines": 1, "alignment": "left", "required": true, "source": "fact" },
+    { "key": "major", "pageIndex": 0, "rect": { "x": 0.2537, "y": 0.5155, "width": 0.6518, "height": 0.0333 }, "fontSize": 12, "minimumFontSize": 9, "maximumLines": 1, "alignment": "left", "required": true, "source": "fact" },
+    { "key": "studentID", "pageIndex": 0, "rect": { "x": 0.2537, "y": 0.5725, "width": 0.6518, "height": 0.0333 }, "fontSize": 12, "minimumFontSize": 9, "maximumLines": 1, "alignment": "left", "required": true, "source": "fact" },
+    { "key": "competitionTrack", "pageIndex": 0, "rect": { "x": 0.2318, "y": 0.6900, "width": 0.3429, "height": 0.0309 }, "fontSize": 11, "minimumFontSize": 8, "maximumLines": 1, "alignment": "left", "required": true, "source": "task" },
+    { "key": "competitionRole", "pageIndex": 0, "rect": { "x": 0.7360, "y": 0.6900, "width": 0.1660, "height": 0.0309 }, "fontSize": 11, "minimumFontSize": 8, "maximumLines": 1, "alignment": "left", "required": true, "source": "project" },
+    { "key": "projectName", "pageIndex": 0, "rect": { "x": 0.2318, "y": 0.7470, "width": 0.6706, "height": 0.0309 }, "fontSize": 11, "minimumFontSize": 8, "maximumLines": 1, "alignment": "left", "required": true, "source": "project" },
+    { "key": "projectSummary", "pageIndex": 0, "rect": { "x": 0.2318, "y": 0.8040, "width": 0.6706, "height": 0.0689 }, "fontSize": 10, "minimumFontSize": 7, "maximumLines": 3, "alignment": "left", "required": true, "source": "project" },
+    { "key": "phone", "pageIndex": 1, "rect": { "x": 0.2537, "y": 0.2138, "width": 0.6518, "height": 0.0333 }, "fontSize": 12, "minimumFontSize": 9, "maximumLines": 1, "alignment": "left", "required": true, "source": "fact" },
+    { "key": "email", "pageIndex": 1, "rect": { "x": 0.2537, "y": 0.2708, "width": 0.6518, "height": 0.0333 }, "fontSize": 12, "minimumFontSize": 8, "maximumLines": 1, "alignment": "left", "required": true, "source": "fact" },
+    { "key": "address", "pageIndex": 1, "rect": { "x": 0.2537, "y": 0.3278, "width": 0.6518, "height": 0.0641 }, "fontSize": 11, "minimumFontSize": 8, "maximumLines": 2, "alignment": "left", "required": true, "source": "fact" },
+    { "key": "materialSources", "pageIndex": 1, "rect": { "x": 0.2318, "y": 0.6402, "width": 0.6706, "height": 0.0618 }, "fontSize": 9, "minimumFontSize": 7, "maximumLines": 3, "alignment": "left", "required": false, "source": "sources" },
+    { "key": "skills", "pageIndex": 2, "rect": { "x": 0.2571, "y": 0.2150, "width": 0.6450, "height": 0.0523 }, "fontSize": 10, "minimumFontSize": 7, "maximumLines": 2, "alignment": "left", "required": false, "source": "selection", "maximumItems": 6, "formatting": "joinComma" },
+    { "key": "certificates", "pageIndex": 2, "rect": { "x": 0.2571, "y": 0.2934, "width": 0.6450, "height": 0.0808 }, "fontSize": 10, "minimumFontSize": 7, "maximumLines": 4, "alignment": "left", "required": false, "source": "selection", "maximumItems": 4, "formatting": "joinLines" },
+    { "key": "awards", "pageIndex": 2, "rect": { "x": 0.2571, "y": 0.4573, "width": 0.6450, "height": 0.0808 }, "fontSize": 10, "minimumFontSize": 7, "maximumLines": 4, "alignment": "left", "required": false, "source": "selection", "maximumItems": 4, "formatting": "joinLines" },
+    { "key": "coreCourses", "pageIndex": 2, "rect": { "x": 0.2571, "y": 0.5642, "width": 0.6450, "height": 0.1402 }, "fontSize": 9, "minimumFontSize": 6, "maximumLines": 6, "alignment": "left", "required": false, "source": "selection", "maximumItems": 5, "formatting": "joinLines" },
+    { "key": "experienceHighlights", "pageIndex": 2, "rect": { "x": 0.2571, "y": 0.7874, "width": 0.6450, "height": 0.1330 }, "fontSize": 9, "minimumFontSize": 6, "maximumLines": 6, "alignment": "left", "required": false, "source": "selection", "maximumItems": 6, "formatting": "joinLines" }
+  ]
+}

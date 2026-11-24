@@ -1,0 +1,268 @@
+{
+  "sample": "F08-pdf",
+  "profile": "profiles/profile.json",
+  "fields": [
+    {
+      "id": "f01",
+      "standard": "fullName",
+      "label": "申请人姓名",
+      "section": "基础资料",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "苏若岚",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:fullName"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          51,
+          639.8897637795277,
+          493.27559055118115,
+          34
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f02",
+      "standard": "email",
+      "label": "电子邮箱",
+      "section": "基础资料",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "rowan.su@example.test",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:email"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          51,
+          567.8897637795277,
+          493.27559055118115,
+          34
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f03",
+      "standard": "education.major",
+      "label": "专业",
+      "section": "基础资料",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "数据科学",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:education.major"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          51,
+          495.8897637795277,
+          493.27559055118115,
+          34
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f04",
+      "standard": "startDate",
+      "label": "开始日期",
+      "section": "学习安排",
+      "type": "date",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48,
+        "dateFormat": "yyyy-MM-dd",
+        "validCalendarDate": true
+      },
+      "expected": "2026-10-01",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:startDate"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          51,
+          386.8897637795277,
+          493.27559055118115,
+          34
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f05",
+      "standard": "project",
+      "label": "项目名称",
+      "section": "学习安排",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "虚构潮汐观测项目",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:project"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          51,
+          314.8897637795277,
+          493.27559055118115,
+          34
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f06",
+      "standard": "summary",
+      "label": "个人说明",
+      "section": "学习安排",
+      "type": "multiline",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 120
+      },
+      "expected": "参与虚构数据整理项目，负责校验与结果展示。",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:summary"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          51,
+          229.8897637795277,
+          493.27559055118115,
+          47
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f07",
+      "standard": "unknown.code",
+      "label": "归档适配类别",
+      "section": "学习安排",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": null,
+      "expectedState": "ask",
+      "question": "请核对拟发送标签，或直接指定含义。",
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [],
+      "location": {
+        "page": 0,
+        "rect": [
+          51,
+          157.8897637795277,
+          493.27559055118115,
+          34
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "parse",
+      "expected": "发现所有标准字段，语义/类型/位置一致",
+      "result": "pending"
+    },
+    {
+      "id": "match",
+      "expected": "按标准答案匹配；疑点询问，不覆盖已确认人工修改",
+      "result": "pending"
+    },
+    {
+      "id": "export",
+      "expected": "原格式新文件，原件与非目标内容保留，无溢出",
+      "result": "pending"
+    }
+  ]
+}

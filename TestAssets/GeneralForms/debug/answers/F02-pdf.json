@@ -1,0 +1,266 @@
+{
+  "sample": "F02-pdf",
+  "profile": "profiles/profile.json",
+  "fields": [
+    {
+      "id": "f01",
+      "standard": "fullName",
+      "label": "申请人姓名",
+      "section": "申请人",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "苏若岚",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:fullName"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          659.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f02",
+      "standard": "phone",
+      "label": "联系电话",
+      "section": "申请人",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "000-0100-0001",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:phone"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          607.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f03",
+      "standard": "work.employer",
+      "label": "现工作单位",
+      "section": "申请人",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "虚构星屿实验室",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:work.employer"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          555.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f04",
+      "standard": "work.role",
+      "label": "岗位",
+      "section": "申请人",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "数据助理",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:work.role"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          503.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f05",
+      "standard": "selection.experiences",
+      "label": "最符合岗位的三段经历",
+      "section": "岗位意向",
+      "type": "multiline",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 120
+      },
+      "expected": null,
+      "expectedState": "ask",
+      "question": "请自行选择三段经历及顺序。",
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          401.8897637795277,
+          339.27559055118115,
+          45
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f06",
+      "standard": "ambiguous.unit",
+      "label": "所属单位",
+      "section": "岗位意向",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": null,
+      "expectedState": "ask",
+      "question": "这里的单位指工作单位还是学校？",
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          349.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f07",
+      "standard": "startDate",
+      "label": "开始日期",
+      "section": "岗位意向",
+      "type": "date",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48,
+        "dateFormat": "yyyy-MM-dd",
+        "validCalendarDate": true
+      },
+      "expected": "2026-10-01",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:startDate"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          297.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "parse",
+      "expected": "发现所有标准字段，语义/类型/位置一致",
+      "result": "pending"
+    },
+    {
+      "id": "match",
+      "expected": "按标准答案匹配；疑点询问，不覆盖已确认人工修改",
+      "result": "pending"
+    },
+    {
+      "id": "export",
+      "expected": "原格式新文件，原件与非目标内容保留，无溢出",
+      "result": "pending"
+    }
+  ]
+}

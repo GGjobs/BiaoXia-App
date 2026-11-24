@@ -1,0 +1,212 @@
+{
+  "sample": "F08-docx",
+  "profile": "profiles/profile.json",
+  "fields": [
+    {
+      "id": "f01",
+      "standard": "fullName",
+      "label": "申请人姓名",
+      "section": "基础资料",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "苏若岚",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:fullName"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:p[5]/w:r",
+        "target": "run",
+        "placeholder": "{{f01}}"
+      }
+    },
+    {
+      "id": "f02",
+      "standard": "email",
+      "label": "电子邮箱",
+      "section": "基础资料",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "rowan.su@example.test",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:email"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:p[7]/w:r",
+        "target": "run",
+        "placeholder": "{{f02}}"
+      }
+    },
+    {
+      "id": "f03",
+      "standard": "education.major",
+      "label": "专业",
+      "section": "基础资料",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "数据科学",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:education.major"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:p[9]/w:r",
+        "target": "run",
+        "placeholder": "{{f03}}"
+      }
+    },
+    {
+      "id": "f04",
+      "standard": "startDate",
+      "label": "开始日期",
+      "section": "学习安排",
+      "type": "date",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48,
+        "dateFormat": "yyyy-MM-dd",
+        "validCalendarDate": true
+      },
+      "expected": "2026-10-01",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:startDate"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:p[12]/w:r",
+        "target": "run",
+        "placeholder": "{{f04}}"
+      }
+    },
+    {
+      "id": "f05",
+      "standard": "project",
+      "label": "项目名称",
+      "section": "学习安排",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "虚构潮汐观测项目",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:project"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:p[14]/w:r",
+        "target": "run",
+        "placeholder": "{{f05}}"
+      }
+    },
+    {
+      "id": "f06",
+      "standard": "summary",
+      "label": "个人说明",
+      "section": "学习安排",
+      "type": "multiline",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 120
+      },
+      "expected": "参与虚构数据整理项目，负责校验与结果展示。",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:summary"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:p[16]/w:r",
+        "target": "run",
+        "placeholder": "{{f06}}"
+      }
+    },
+    {
+      "id": "f07",
+      "standard": "unknown.code",
+      "label": "归档适配类别",
+      "section": "学习安排",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": null,
+      "expectedState": "ask",
+      "question": "请核对拟发送标签，或直接指定含义。",
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:p[18]/w:r",
+        "target": "run",
+        "placeholder": "{{f07}}"
+      }
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "parse",
+      "expected": "发现所有标准字段，语义/类型/位置一致",
+      "result": "pending"
+    },
+    {
+      "id": "match",
+      "expected": "按标准答案匹配；疑点询问，不覆盖已确认人工修改",
+      "result": "pending"
+    },
+    {
+      "id": "export",
+      "expected": "原格式新文件，原件与非目标内容保留，无溢出",
+      "result": "pending"
+    }
+  ]
+}

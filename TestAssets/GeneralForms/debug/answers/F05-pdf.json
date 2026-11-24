@@ -1,0 +1,297 @@
+{
+  "sample": "F05-pdf",
+  "profile": "profiles/profile.json",
+  "fields": [
+    {
+      "id": "f01",
+      "standard": "project",
+      "label": "项目名称",
+      "section": "申报信息",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "虚构潮汐观测项目",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:project"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          659.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f02",
+      "standard": "fullName",
+      "label": "申请人姓名",
+      "section": "申报信息",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "苏若岚",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:fullName"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          607.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f03",
+      "standard": "education.highest.school",
+      "label": "最高学历毕业院校",
+      "section": "申报信息",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "虚构澄海学院",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:education.highest.school"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          555.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f04",
+      "standard": "email",
+      "label": "电子邮箱",
+      "section": "申报信息",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "rowan.su@example.test",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:email"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          503.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f05",
+      "standard": "skills",
+      "label": "技能（可多选）",
+      "section": "项目能力",
+      "type": "multi",
+      "options": [
+        "Python",
+        "Swift",
+        "SQL"
+      ],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": [
+        "Python",
+        "Swift"
+      ],
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:skills"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          414.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ],
+        "optionRects": {
+          "Python": [
+            205.0,
+            422.8897637795277,
+            9,
+            9
+          ],
+          "Swift": [
+            318.0918635170604,
+            422.8897637795277,
+            9,
+            9
+          ],
+          "SQL": [
+            431.1837270341208,
+            422.8897637795277,
+            9,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "id": "f06",
+      "standard": "summary",
+      "label": "个人说明",
+      "section": "项目能力",
+      "type": "multiline",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 120
+      },
+      "expected": "参与虚构数据整理项目，负责校验与结果展示。",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:summary"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          349.8897637795277,
+          339.27559055118115,
+          45
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f07",
+      "standard": "startDate",
+      "label": "开始日期",
+      "section": "项目能力",
+      "type": "date",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48,
+        "dateFormat": "yyyy-MM-dd",
+        "validCalendarDate": true
+      },
+      "expected": "2026-10-01",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:startDate"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          297.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "parse",
+      "expected": "发现所有标准字段，语义/类型/位置一致",
+      "result": "pending"
+    },
+    {
+      "id": "match",
+      "expected": "按标准答案匹配；疑点询问，不覆盖已确认人工修改",
+      "result": "pending"
+    },
+    {
+      "id": "export",
+      "expected": "原格式新文件，原件与非目标内容保留，无溢出",
+      "result": "pending"
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "sample": "F09-docx",
+  "profile": "profiles/profile.json",
+  "fields": [
+    {
+      "id": "f01",
+      "standard": "fullName",
+      "label": "申请人姓名",
+      "section": "会员身份",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "苏若岚",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:fullName"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:tbl[1]/w:tr/w:tc/w:p[2]/w:r[2]",
+        "target": "run",
+        "placeholder": "{{f01}}"
+      }
+    },
+    {
+      "id": "f02",
+      "standard": "birthDate",
+      "label": "出生日期",
+      "section": "会员身份",
+      "type": "date",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48,
+        "dateFormat": "yyyy-MM-dd",
+        "validCalendarDate": true
+      },
+      "expected": "1999-02-28",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:birthDate"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:tbl[1]/w:tr/w:tc/w:p[3]/w:r[2]",
+        "target": "run",
+        "placeholder": "{{f02}}"
+      }
+    },
+    {
+      "id": "f03",
+      "standard": "membership",
+      "label": "会员类别",
+      "section": "会员身份",
+      "type": "single",
+      "options": [
+        "普通",
+        "学生"
+      ],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "普通",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:membership"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:tbl[1]/w:tr/w:tc/w:p[4]/w:r[2]",
+        "target": "run",
+        "placeholder": "□ 普通  □ 学生"
+      }
+    },
+    {
+      "id": "f04",
+      "standard": "email",
+      "label": "电子邮箱",
+      "section": "联络偏好",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "rowan.su@example.test",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:email"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:tbl[2]/w:tr/w:tc/w:p[2]/w:r[2]",
+        "target": "run",
+        "placeholder": "{{f04}}"
+      }
+    },
+    {
+      "id": "f05",
+      "standard": "address",
+      "label": "通讯地址",
+      "section": "联络偏好",
+      "type": "multiline",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 120
+      },
+      "expected": "虚构市云帆路十二号",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:address"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:tbl[2]/w:tr/w:tc/w:p[3]/w:r[2]",
+        "target": "run",
+        "placeholder": "{{f05}}"
+      }
+    },
+    {
+      "id": "f06",
+      "standard": "delivery",
+      "label": "寄送方式",
+      "section": "联络偏好",
+      "type": "single",
+      "options": [
+        "电子",
+        "纸质"
+      ],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "电子",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:delivery"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:tbl[2]/w:tr/w:tc/w:p[4]/w:r[2]",
+        "target": "run",
+        "placeholder": "□ 电子  □ 纸质"
+      }
+    },
+    {
+      "id": "f07",
+      "standard": "declaration",
+      "label": "是否同意声明",
+      "section": "本人声明",
+      "type": "single",
+      "options": [
+        "是",
+        "否"
+      ],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": null,
+      "expectedState": "ask",
+      "question": "请明确选择，未确认不视为否。",
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:tbl[3]/w:tr/w:tc/w:p[2]/w:r[2]",
+        "target": "run",
+        "placeholder": "□ 是  □ 否"
+      }
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "parse",
+      "expected": "发现所有标准字段，语义/类型/位置一致",
+      "result": "pending"
+    },
+    {
+      "id": "match",
+      "expected": "按标准答案匹配；疑点询问，不覆盖已确认人工修改",
+      "result": "pending"
+    },
+    {
+      "id": "export",
+      "expected": "原格式新文件，原件与非目标内容保留，无溢出",
+      "result": "pending"
+    }
+  ]
+}

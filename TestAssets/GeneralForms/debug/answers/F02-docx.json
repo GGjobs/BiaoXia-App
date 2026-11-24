@@ -1,0 +1,210 @@
+{
+  "sample": "F02-docx",
+  "profile": "profiles/profile.json",
+  "fields": [
+    {
+      "id": "f01",
+      "standard": "fullName",
+      "label": "申请人姓名",
+      "section": "申请人",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "苏若岚",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:fullName"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:p[4]/w:r[2]",
+        "target": "run",
+        "placeholder": "{{f01}}"
+      }
+    },
+    {
+      "id": "f02",
+      "standard": "phone",
+      "label": "联系电话",
+      "section": "申请人",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "000-0100-0001",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:phone"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:p[5]/w:r[2]",
+        "target": "run",
+        "placeholder": "{{f02}}"
+      }
+    },
+    {
+      "id": "f03",
+      "standard": "work.employer",
+      "label": "现工作单位",
+      "section": "申请人",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "虚构星屿实验室",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:work.employer"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:p[6]/w:r[2]",
+        "target": "run",
+        "placeholder": "{{f03}}"
+      }
+    },
+    {
+      "id": "f04",
+      "standard": "work.role",
+      "label": "岗位",
+      "section": "申请人",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "数据助理",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:work.role"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:p[7]/w:r[2]",
+        "target": "run",
+        "placeholder": "{{f04}}"
+      }
+    },
+    {
+      "id": "f05",
+      "standard": "selection.experiences",
+      "label": "最符合岗位的三段经历",
+      "section": "岗位意向",
+      "type": "multiline",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 120
+      },
+      "expected": null,
+      "expectedState": "ask",
+      "question": "请自行选择三段经历及顺序。",
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:p[9]/w:r[2]",
+        "target": "run",
+        "placeholder": "{{f05}}"
+      }
+    },
+    {
+      "id": "f06",
+      "standard": "ambiguous.unit",
+      "label": "所属单位",
+      "section": "岗位意向",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": null,
+      "expectedState": "ask",
+      "question": "这里的单位指工作单位还是学校？",
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:p[10]/w:r[2]",
+        "target": "run",
+        "placeholder": "{{f06}}"
+      }
+    },
+    {
+      "id": "f07",
+      "standard": "startDate",
+      "label": "开始日期",
+      "section": "岗位意向",
+      "type": "date",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48,
+        "dateFormat": "yyyy-MM-dd",
+        "validCalendarDate": true
+      },
+      "expected": "2026-10-01",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:startDate"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:p[11]/w:r[2]",
+        "target": "run",
+        "placeholder": "{{f07}}"
+      }
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "parse",
+      "expected": "发现所有标准字段，语义/类型/位置一致",
+      "result": "pending"
+    },
+    {
+      "id": "match",
+      "expected": "按标准答案匹配；疑点询问，不覆盖已确认人工修改",
+      "result": "pending"
+    },
+    {
+      "id": "export",
+      "expected": "原格式新文件，原件与非目标内容保留，无溢出",
+      "result": "pending"
+    }
+  ]
+}

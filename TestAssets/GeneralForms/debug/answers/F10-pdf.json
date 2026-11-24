@@ -1,0 +1,310 @@
+{
+  "sample": "F10-pdf",
+  "profile": "profiles/profile.json",
+  "fields": [
+    {
+      "id": "f01",
+      "standard": "fullName",
+      "label": "姓名",
+      "section": "会员",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "苏若岚",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:fullName"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          659.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f02",
+      "standard": "englishName",
+      "label": "英文姓名",
+      "section": "会员",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "Rowan Su",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:englishName"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          607.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f03",
+      "standard": "phone",
+      "label": "联系电话",
+      "section": "会员",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "000-0100-0001",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:phone"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          555.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f04",
+      "standard": "membership",
+      "label": "会员类别",
+      "section": "会员",
+      "type": "single",
+      "options": [
+        "普通",
+        "学生"
+      ],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "普通",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:membership"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          503.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ],
+        "optionRects": {
+          "普通": [
+            205.0,
+            511.8897637795277,
+            9,
+            9
+          ],
+          "学生": [
+            374.6377952755906,
+            511.8897637795277,
+            9,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "id": "f05",
+      "standard": "skills",
+      "label": "技能（可多选）",
+      "section": "服务意向",
+      "type": "multi",
+      "options": [
+        "Python",
+        "Swift",
+        "SQL"
+      ],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": [
+        "Python",
+        "Swift"
+      ],
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:skills"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          414.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ],
+        "optionRects": {
+          "Python": [
+            205.0,
+            422.8897637795277,
+            9,
+            9
+          ],
+          "Swift": [
+            318.0918635170604,
+            422.8897637795277,
+            9,
+            9
+          ],
+          "SQL": [
+            431.1837270341208,
+            422.8897637795277,
+            9,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "id": "f06",
+      "standard": "summary",
+      "label": "个人说明",
+      "section": "服务意向",
+      "type": "multiline",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 120
+      },
+      "expected": "参与虚构数据整理项目，负责校验与结果展示。",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:summary"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          349.8897637795277,
+          339.27559055118115,
+          45
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f07",
+      "standard": "ambiguous.unit",
+      "label": "所属单位",
+      "section": "服务意向",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": null,
+      "expectedState": "ask",
+      "question": "这里的单位指工作单位还是学校？",
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          297.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "parse",
+      "expected": "发现所有标准字段，语义/类型/位置一致",
+      "result": "pending"
+    },
+    {
+      "id": "match",
+      "expected": "按标准答案匹配；疑点询问，不覆盖已确认人工修改",
+      "result": "pending"
+    },
+    {
+      "id": "export",
+      "expected": "原格式新文件，原件与非目标内容保留，无溢出",
+      "result": "pending"
+    }
+  ]
+}

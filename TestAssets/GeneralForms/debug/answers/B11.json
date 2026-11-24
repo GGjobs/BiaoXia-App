@@ -1,0 +1,321 @@
+{
+  "sample": "B11",
+  "profile": "profiles/profile.json",
+  "fields": [
+    {
+      "id": "f01",
+      "standard": "fullName",
+      "label": "姓名",
+      "section": "边界核对",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "苏若岚",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:fullName"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          659.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f02",
+      "standard": "birthDate",
+      "label": "出生日期",
+      "section": "边界核对",
+      "type": "date",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48,
+        "dateFormat": "yyyy-MM-dd",
+        "validCalendarDate": true
+      },
+      "expected": "1999-02-28",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:birthDate"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          607.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f03",
+      "standard": "email",
+      "label": "电子邮箱",
+      "section": "边界核对",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "rowan.su@example.test",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:email"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          555.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f04",
+      "standard": "skills",
+      "label": "技能（可多选）",
+      "section": "边界核对",
+      "type": "multi",
+      "options": [
+        "Python",
+        "Swift",
+        "SQL"
+      ],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": [
+        "Python",
+        "Swift"
+      ],
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:skills"
+      ],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          503.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ],
+        "optionRects": {
+          "Python": [
+            205.0,
+            511.8897637795277,
+            9,
+            9
+          ],
+          "Swift": [
+            318.0918635170604,
+            511.8897637795277,
+            9,
+            9
+          ],
+          "SQL": [
+            431.1837270341208,
+            511.8897637795277,
+            9,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "id": "f05",
+      "standard": "declaration",
+      "label": "是否同意声明",
+      "section": "边界核对",
+      "type": "single",
+      "options": [
+        "是",
+        "否"
+      ],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": null,
+      "expectedState": "ask",
+      "question": "请明确选择，未确认不视为否。",
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          451.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ],
+        "optionRects": {
+          "是": [
+            205.0,
+            459.8897637795277,
+            9,
+            9
+          ],
+          "否": [
+            374.6377952755906,
+            459.8897637795277,
+            9,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "id": "f06",
+      "standard": "unknown.code",
+      "label": "归档适配类别",
+      "section": "边界核对",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": null,
+      "expectedState": "ask",
+      "question": "请核对拟发送标签，或直接指定含义。",
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          399.8897637795277,
+          339.27559055118115,
+          32
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    },
+    {
+      "id": "f07",
+      "standard": "summary",
+      "label": "个人说明",
+      "section": "边界核对",
+      "type": "multiline",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 32
+      },
+      "expected": null,
+      "expectedState": "ask",
+      "question": "文本超过区域容量，请缩短内容或调整受支持的区域。",
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [],
+      "location": {
+        "page": 0,
+        "rect": [
+          205,
+          334.8897637795277,
+          339.27559055118115,
+          45
+        ],
+        "coordinateSystem": "PDF points, bottom-left, unrotated MediaBox",
+        "pageSize": [
+          595.2755905511812,
+          841.8897637795277
+        ]
+      }
+    }
+  ],
+  "documentRefusalReason": null,
+  "documentExpectedState": "review",
+  "checkpoints": [
+    {
+      "id": "long_text",
+      "expected": "阻断溢出完成状态；不可仅缩小字号后裁切；可人工修正受支持区域。",
+      "result": "pending"
+    },
+    {
+      "id": "manual_position_correction",
+      "expected": "阻断溢出完成状态；不可仅缩小字号后裁切；可人工修正受支持区域。",
+      "result": "pending"
+    }
+  ],
+  "forbiddenOutbound": [
+    "苏若岚",
+    "FICTIONAL_",
+    "星屿实验室",
+    "B11.pdf"
+  ],
+  "execution": [
+    "import actual file",
+    "parse using production pipeline",
+    "review outbound text locally",
+    "capture actual HTTP and logs including retry and restore",
+    "compare each checkpoint independently"
+  ],
+  "profileOverrides": {
+    "summary": "虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。虚构长文本用于检验换行和区域容量。"
+  }
+}

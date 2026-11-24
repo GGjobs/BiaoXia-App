@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 2,
+  "fixtureNotice": "所有人物、组织和联系方式均为虚构，仅用于测试。",
+  "fields": {
+    "fullName": "林知夏",
+    "gender": "女",
+    "birthDate": "2004-09-18",
+    "school": "云岭未来大学",
+    "college": "智能工程学院",
+    "major": "数据科学与智能系统",
+    "studentID": "2023AI0427",
+    "phone": "13800004271",
+    "email": "lin.zhixia@example.test",
+    "address": "云岭市新知区星河路88号7栋302室",
+    "ethnicity": "汉族",
+    "nativePlace": "云岭省星海市",
+    "politicalStatus": "共青团员",
+    "educationLevel": "本科在读",
+    "className": "数据智能 2302 班",
+    "enrollmentDate": "2023-09",
+    "graduationDate": "2027-06",
+    "skills": ["Swift", "Python", "SQL", "Figma"],
+    "language": "大学英语六级 535 分",
+    "certificate": "全国计算机等级考试二级 Python",
+    "award": "2025 年校级创新创业竞赛二等奖",
+    "projects": [
+      {
+        "title": "校园数据可视化平台",
+        "role": "项目负责人",
+        "description": "负责需求梳理、数据清洗与移动端交互原型。"
+      },
+      {
+        "title": "智能学习计划助手",
+        "role": "交互设计",
+        "description": "参与信息架构设计与隐私保护方案验证。"
+      }
+    ],
+    "courses": ["数据结构", "概率统计", "机器学习导论", "数据库系统", "信息可视化"],
+    "internship": "云岭数智实验室｜数据产品实习生｜参与校园数据看板需求分析与测试。",
+    "campusExperience": "智能工程学院学生会学习部干事｜组织两场学习经验分享活动。",
+    "volunteerExperience": "新知社区数字助老志愿服务｜累计服务 24 小时。",
+    "selfIntroduction": "关注数据产品、移动交互与隐私保护，习惯用可验证的原始材料维护个人信息。"
+  }
+}

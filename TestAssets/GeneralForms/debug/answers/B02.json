@@ -1,0 +1,249 @@
+{
+  "sample": "B02",
+  "profile": "profiles/profile.json",
+  "fields": [
+    {
+      "id": "f01",
+      "standard": "fullName",
+      "label": "姓名",
+      "section": "学员信息",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "苏若岚",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:fullName"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:p[4]/w:sdt/w:sdtContent/w:r",
+        "target": "run",
+        "placeholder": "{{f01}}",
+        "sdtTag": "f01"
+      }
+    },
+    {
+      "id": "f02",
+      "standard": "phone",
+      "label": "联系电话",
+      "section": "学员信息",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "000-0100-0001",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": true,
+      "sources": [
+        "profile:phone"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:p[5]/w:sdt/w:sdtContent/w:r",
+        "target": "run",
+        "placeholder": "{{f02}}",
+        "sdtTag": "f02"
+      }
+    },
+    {
+      "id": "f03",
+      "standard": "work.employer",
+      "label": "现工作单位",
+      "section": "学员信息",
+      "type": "text",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "虚构星屿实验室",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:work.employer"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:p[6]/w:sdt/w:sdtContent/w:r",
+        "target": "run",
+        "placeholder": "{{f03}}",
+        "sdtTag": "f03"
+      }
+    },
+    {
+      "id": "f04",
+      "standard": "course",
+      "label": "报名课程",
+      "section": "选课信息",
+      "type": "single",
+      "options": [
+        "数据分析",
+        "设计基础"
+      ],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "数据分析",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:course"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:p[8]/w:sdt/w:sdtContent/w:r",
+        "target": "run",
+        "placeholder": "□ 数据分析  □ 设计基础",
+        "sdtTag": "f04"
+      }
+    },
+    {
+      "id": "f05",
+      "standard": "language",
+      "label": "授课语言",
+      "section": "选课信息",
+      "type": "single",
+      "options": [
+        "中文",
+        "英文"
+      ],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": "中文",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:language"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:p[9]/w:sdt/w:sdtContent/w:r",
+        "target": "run",
+        "placeholder": "□ 中文  □ 英文",
+        "sdtTag": "f05"
+      }
+    },
+    {
+      "id": "f06",
+      "standard": "startDate",
+      "label": "开始日期",
+      "section": "选课信息",
+      "type": "date",
+      "options": [],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48,
+        "dateFormat": "yyyy-MM-dd",
+        "validCalendarDate": true
+      },
+      "expected": "2026-10-01",
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:startDate"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:p[10]/w:sdt/w:sdtContent/w:r",
+        "target": "run",
+        "placeholder": "{{f06}}",
+        "sdtTag": "f06"
+      }
+    },
+    {
+      "id": "f07",
+      "standard": "skills",
+      "label": "技能（可多选）",
+      "section": "选课信息",
+      "type": "multi",
+      "options": [
+        "Python",
+        "Swift",
+        "SQL"
+      ],
+      "relation": "self",
+      "constraints": {
+        "required": true,
+        "maxCharacters": 48
+      },
+      "expected": [
+        "Python",
+        "Swift"
+      ],
+      "expectedState": "automatic",
+      "question": null,
+      "refusalReason": null,
+      "basicEligible": false,
+      "sources": [
+        "profile:skills"
+      ],
+      "location": {
+        "part": "word/document.xml",
+        "xpath": "/w:document/w:body/w:p[11]/w:sdt/w:sdtContent/w:r",
+        "target": "run",
+        "placeholder": "□ Python  □ Swift  □ SQL",
+        "sdtTag": "f07"
+      }
+    }
+  ],
+  "documentRefusalReason": null,
+  "documentExpectedState": "review",
+  "checkpoints": [
+    {
+      "id": "hidden_content",
+      "expected": "隐藏文字和元数据只留本地。",
+      "result": "pending"
+    },
+    {
+      "id": "metadata",
+      "expected": "隐藏文字和元数据只留本地。",
+      "result": "pending"
+    },
+    {
+      "id": "comments",
+      "expected": "隐藏文字和元数据只留本地。",
+      "result": "pending"
+    }
+  ],
+  "forbiddenOutbound": [
+    "苏若岚",
+    "FICTIONAL_",
+    "星屿实验室",
+    "B02.docx"
+  ],
+  "execution": [
+    "import actual file",
+    "parse using production pipeline",
+    "review outbound text locally",
+    "capture actual HTTP and logs including retry and restore",
+    "compare each checkpoint independently"
+  ]
+}
